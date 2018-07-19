@@ -1,0 +1,140 @@
+% XeLaTeX style packages
+\documentclass[a4paper,11pt]{article}
+%\usepackage[utf8]{inputenc} 
+\usepackage{inputenc} 
+%\usepackage{fontspec}
+%\defaultfontfeatures{Ligatures=TeX}
+%\setmainfont{Liberation Serif}
+%\usepackage{microtype}
+\frenchspacing
+\usepackage{enumitem}
+\usepackage{color}
+\usepackage[top=3cm, bottom=3.5cm, left=3cm, right=3cm]{geometry}
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage[binary-units]{siunitx}
+\sisetup{range-phrase=--}
+\sisetup{range-units=single}
+\usepackage{booktabs}
+\usepackage{multirow}
+%\usepackage[backend=bibtex,sorting=none]{biblatex}
+\usepackage[sorting=none]{biblatex}
+\bibliography{DUNEPPRP}
+%\bibliographystyle{unsrt}
+\usepackage{hyperref}
+%\usepackage{float}
+%\usepackage{subfloat}
+%\usepackage{lineno}
+
+\begin{document}
+\setcounter{page}{0}
+\pagenumbering{Roman}
+%\linenumbers
+
+\title{DUNE Construction Proposal}
+
+\begin{center}
+
+\includegraphics[width=\textwidth]{figs/dune-horiz-logo-lg.png}
+\vspace{1ex}
+
+{\LARGE\bf 
+UK Construction Proposal
+}
+\vfill
+
+{\bf University of Birmingham:} A.\,Watson
+
+{\bf University of Bristol:} D.\,Cussans, D.\,Newbold, J.\,Rademacker
+
+{\bf University of Cambridge:} A.\,Name
+
+{\bf Daresbury Laboratory:} A.\,Grant
+
+{\bf IPPP, Durham:} S.\,Pascoli
+
+{\bf University of Edinburgh:} D.\,Clarke, F.\,Muheim
+
+{\bf Imperial:} A.\,Name
+
+{\bf University of Lancaster:} A.\,Blake, J.\,Nowak
+
+{\bf University of Liverpool:} C.\,Touramanis
+
+{\bf University of Manchester:} J.\,Evans, S.\,S\"oldner-Rembold
+
+{\bf University of Oxford:} G.\,Barr, \underline{A.\,Weber}
+
+{\bf Rutherford Appleton Laboratory:} R.\,Preece, C.\,Shepherd-Themistocleous, A.\,Weber, F.\,Wilson
+
+{\bf University of Sheffield:} V.\,Kudryavtsev, N.\,Sooner
+
+{\bf University of Sussex:} C.\,Griffith, J.\,Hartnell, S.\,Peeters
+
+{\bf University College, London:} A.\,Holin, R.\,Nichol
+
+%{\bf University of Warwick:} G.J.\,Barker, J.J.\,Back, N.\,Grant, J.\,Haigh, J.\,Marshall
+{\bf University of Warwick:} G.J.\,Barker, J.\,Marshall, Y.A\,Ramachers
+
+{\bf\it full list of academics and project engineers, to be discussed }
+\vfill
+
+\includegraphics[width=0.9\textwidth]{figs/LBNE_Graphic_061615_2016.jpg}
+\end{center}
+\vfill
+
+\section*{Summary}
+DUNE is great and\\
+This proposal is to get money\\
+This proposal is to get money\\
+This proposal is to get money
+\thispagestyle{empty}
+
+\newpage
+\thispagestyle{empty}
+\setcounter{page}{1}
+
+\setcounter{tocdepth}{2}
+\tableofcontents
+\newpage
+
+\pagenumbering{arabic}
+
+\section{Introduction(1 pages)} 
+\input{Intro}
+
+\section{Science Case (2 pages)}
+\input{Science}
+
+\section{International Context (1 pages)}
+\input{IntCont}
+
+\section{Strategy and Objectives (1 page)}
+\input{Strategy}
+
+\section{Project Description}
+\input{WP0}
+\input{WP1}
+\input{WP2}
+\input{WP3}
+
+\section{Resource request and cost (2 pages)}
+\input{Cost.tex}
+%
+\section{Project Management (8 pages)}
+\input{management}
+
+\printbibliography
+\clearpage
+
+
+\appendix
+\section*{Appendices (no limit)}
+\addcontentsline{toc}{section}{Appendices (no limit)}
+\renewcommand{\thesubsection}{\Alph{subsection}}
+
+\input{Appendix.tex}
+
+
+\end{document}
+
