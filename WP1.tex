@@ -2,17 +2,107 @@
 
 \subsubsection{Introduction}
 
-Why are we doing this?
 
-test ...
+{\bf Introduction and paragraphs about physics goes here}
+
+The ultimate physics reach of DUNE depends critically on the performance of its reconstruction
+software. Neutrino event reconstruction is the crucial step in which the precise imaging
+capabilities of LAr-TPC detectors are exploited in order to deliver high-quality inputs to
+the physics analyses. The automated reconstruction of neutrino interactions in LAr-TPC detectors
+presents a significant challenge due to the complexity of the LAr-TPC images, which contain
+a mixture of overlapping track-like and shower-like topologies. This remains a non-trivial and
+unsolved problem, although significant advances have been made over the past couple of years.
+
+The UK has a world-leading role in the development and delivery of advanced reconstruction
+software for the LAr neutrino programme. The UK suite of reconstruction software spans the
+low-level pattern recognition algorithms used to extract detailed information from LAr-TPC images,
+as well as high-level particle identification and energy estimation techniques used to characterise
+the reconstructed particle tracks and electromagnetic showers. In DUNE, the UK-led reconstruction tools
+are key elements in the Far Detector physics and design studies, and will also provide the basis of
+the ProtoDUNE data analysis. Figure X shows ... {\bf INSERT SOME FIGURES HERE !!!}
+
+The cornerstone of the UK reconstruction software is the Pandora pattern recognition framework {\bf REFERENCE},
+based on advanced particle flow techniques. Pattern recognition is the most critical
+and challenging stage of the LAr-TPC reconstruction, and the UK's leadership in this area provides
+a strong platform for the overall reconstruction and physics effort. Pandora promotes a proven
+multi-algorithm approach to pattern recognition in which a large number of individual algorithms
+gradually buiild up a picture of the event and, collectively, provide a robust reconstruction.
+Pandora is the {\it de facto} reconstruction for multiple LAr-TPC experiments, including use for
+the first physics results from MicroBooNE {\bf REFERENCE}
+
+This work package will exploit the UK leadership in reconstruction software. The goal will be
+develop and to deliver the main pattern recognition and high-level reconstruction software
+to support the construction of the Far Detector, its commissioning and first data-taking,
+and first physics results.
+
+{\bf Need to write some paragraphs about computing and FD commissioning!}
+
+
+.
 
 \subsubsection{Work plan}
+
+{\bf Insert a paragraph about physics here! Then discuss reconstruction as follows...}
+
+The reconstruction sub-package will retain and exploit the UK's leading role in reconstruction software,
+placing the UK at the heart of the DUNE physics programme. The effort will continue to focus on the
+development and optimisation of pattern recognition and high-level reconstruction algorithms.
+The goal of the next phase of development will be the delivery of the first production-ready software
+to support the commissioning and first data-taking of the DUNE Far Detector and the first physics results.
+
+The Pandora multi-algorithm approach to pattern recognition will remain the backbone of the
+UK reconstruction effort. The next phase of development will add new levels of sophistication,
+including the application of calorimetric information, new approaches to 3D reconstruction,
+and the use of iterative techniques, which are uniquely available within the Pandora framework.
+A key aspect of the new programme of work will be the harnessing of deep-learning architectures,
+which have the potential to create a step change in LAr-TPC reconstruction software.
+
+Much of the current effort has focused on accelerator neutrino reconstruction software to support
+oscillation physics studies. In the next phase of development, this scope will be expanded to
+include atmospheric neutrinos and cosmic-ray data, which  are expected to provide the first
+Far Detector data samples. In addition, the UK reconstruction tools will be expanded to encompass
+dual-phase as well as single-phase technology.
+
+{ \bf Need to discuss ProtoDUNE !!!}
+
 \subsubsection{WP1.1 Oscillation Physics}
+
 \subsubsection{WP1.2 Reconstruction Software}
+
+\begin{itemize}
+
+\item {Core pattern recognition software} (Warwick and Lancaster)
+
+\item {Incorporation of Deep Learning within pattern recognition} (Warwick)
+
+The harnessing of deep-learning approaches to characterise event topologies and steer pattern recognition
+algorithms will be led by the Warwick group. Algorithms will typically persist descriptions of the relevant
+image/problem for examination offline, using Python to control packages such as TensorFlow, PyTorch or similar.
+The first use of deep learning will be an analysis of the hits that provide the input to the pattern recognition.
+Information will be attached to each hit to indicate their probability of originating from a track-like or
+shower-like particle. Once this information is available in Pandora, it will form the basis of new algorithms
+for reconstructing track-like and shower-like topologies. Deep learning approaches will also be exploited
+to improve the identification of neutrino interaction vertices and to reconstruct the positions of downstream,
+secondary vertices. Knowledge of secondary ineraction vertices will be valuable for guiding the pattern
+recognition of the most complex events at DUNE. A novel, iterative chain of algorithms will be developed to
+analyse any given vertex region and efficiently reconstruct the particles emerging from the vertex.
+
+\item {High-level reconstruction tools} (Cambridge)
+
+\item {Non-accelerator and dual-phase reconstruction} (Lancaster and Warwick)
+
+\item {Core technical work}
+
+\end{itemize}
+
+
+
 \subsubsection{WP1.3 Computing}
+
+\subsubsection{WP1.4 Far Detector Commissioning}
 
 \subsubsection{Deliverables and Milestones}
 
 \subsubsection{Business Case}
 
-What are the benefits for the UK?
+What are the benefits for the UK --- what do I write here?

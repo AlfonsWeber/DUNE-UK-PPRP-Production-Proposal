@@ -28,8 +28,13 @@
 %\usepackage{lineno}
 \usepackage{todonotes}
 \usepackage{placeins}
+\usepackage{floatrow}
+\usepackage{caption}
+
+\newfloatcommand{capbtabbox}{table}[][\FBwidth]
 
 \newcommand{\Dparagraph}[1]{{\noindent\bf #1}}
+\renewcommand{\todo}[1]{{\color{red}\ (Comment: #1)}}
 \setlist{itemsep=-0.2ex,topsep=0.0ex}
 
 \titlespacing*{\section}{0pt}{2.5ex plus 1ex minus .2ex}{1.0ex plus .2ex}
@@ -63,21 +68,16 @@
 \input{WP2}
 \input{WP3}
 
-\pagebreak
-
 %\section{Resource Request and Cost}
 \input{Cost.tex}
-\FloatBarrier
 
-\pagebreak
 %\section{Project Management (8 pages)}
 \input{management}
 
-\pagebreak
+\clearpage
 
 \printbibliography
-\pagebreak
-
+\newpage
 
 \appendix
 \section*{Appendices (no limit)}
